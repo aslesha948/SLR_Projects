@@ -26,6 +26,7 @@ years_experience = st.number_input("Enter Years of Experience:", min_value=0.0, 
 # When the button is clicked, make predictions
 if st.button("Predict Salary"):
     # Make a prediction using the trained model
+    
     experience_input = np.array([[years_experience]])  # Convert the input to a 2D array for prediction
     prediction = model.predict(experience_input)
    
@@ -33,4 +34,4 @@ if st.button("Predict Salary"):
     st.success(f"The predicted salary for {years_experience} years of experience is: ${prediction[0]:,.2f}")
    
 # Display information about the model
-st.write("The model was trained using a dataset of salaries and years of experience.built model by Askesha")
+st.write("The model was trained using a dataset of salaries and years of experience.built model by Aslesha")
